@@ -1,0 +1,591 @@
+    * { margin: 0; padding: 0; }
+
+    body {
+    margin: 0;
+    }
+
+
+    .cabecalho-logo{
+        background-color: #308CCE;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .cabecalho-logo img{
+        width: 125px;
+        margin-top: 7px;
+    
+    
+    }
+
+    .pesquisar-acessar{
+        left: 0;
+        margin-top: 20px;
+        text-align: left;
+        width: 100%;
+        z-index: 100;
+
+
+        font-family: 'Arial', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #pesquisar1 {
+        border-radius: 20px;
+        background-color: #EEE6E6;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        width: 490px;
+        height: 35px;
+
+        font-family: 'Arial', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        text-align: left;
+
+        background-image: url("./imagens/icons/search.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1.3em;
+        padding-left: 1.8em;
+    }
+    
+    .botao1{
+        text-align: right;
+        margin-right: 15px;
+        margin-top: -40px;
+
+
+    }
+
+    .botao-acessar-pagina1:hover{
+        background-color: aqua;
+    }
+
+
+    .botao-acessar-pagina1{
+        border: none;
+        background-color:#308CCE;
+        border-radius: 20px;
+        width: 160px;
+        height: 40px;
+        color: white;
+        font-weight: bolder;
+
+    }
+
+    /*NOVOS ADICIONADOS AQUI*/
+
+    .body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .slider{
+        margin: 0 auto;
+        width: 601px;
+        height: 248px;
+        overflow: hidden;
+    }
+    
+    .slides{
+    
+        height: 268px;
+        display: flex; 
+    }
+    
+    .slides input{
+        display: none;
+    }
+    
+    .slide{
+        width: 25%;
+        position: relative;
+    }
+    
+    .slide img{
+        width: 658px;
+        height: 248px;
+    }
+    
+    .manual-navigation{
+    
+        position: absolute;
+        width: 658px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn{
+    
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 3s;
+    }
+    
+    .manual-btn:not(:last-child) {
+    
+         margin-right: 50px;
+    }
+    
+    .manual-btn:hover{
+        background-color: #fff;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: -75%;
+    
+    }
+    #radio2:checked ~ .first{
+        margin-left: -75%;
+    
+    }
+    
+    #radio3.checked ~ .first{
+        margin-left: -75%;
+    }
+    
+    #radio4.checked ~ .first{
+        margin-left: -75%;
+    }
+    
+    .navigation-auto div{
+        border: 2px solid #20a6ff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .navigation-auto{
+    
+        position: absolute;
+        width: 658px;
+        margin-top: 360px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    
+    }
+    
+    #radio1:checked ~.navigation-auto .auto-btn1{
+        background-color: #fff;
+    }
+    #radio2:checked ~.navigation-auto .auto-btn2{
+        background-color: #fff;
+    }
+    #radio3:checked ~.navigation-auto .auto-btn3{
+        background-color: #fff;
+    }
+    #radio4:checked ~.navigation-auto .auto-btn4{
+        background-color: #fff;
+    }
+
+    /*NOVOS TERMINADOS AQUI*/
+
+
+    .slides {
+        margin: auto;
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+
+    .propagandas1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    #img1{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+        margin-right: 100px;
+    }
+
+    #img2{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+        margin-right: 100px;
+    }
+
+    #img3{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+    }
+    .propagandas2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    #img2-1{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+        margin-right: 100px;
+    }
+
+    #img2-2{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+        margin-right: 100px;
+    }
+
+    #img2-3{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+    }
+
+    .informacoes-emsanja{
+        background-color: #3DB9CA;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .informacoes-emsanja .titulo{
+        margin-top: -10px;
+        text-align: center;
+    }
+
+    .informacoes-emsanja .sobre{
+        margin-left: 100px;
+    }
+
+    .informacoes-emsanja .contato{
+        margin-left: 100px;
+    }
+
+    .informacoes-emsanja .cadastre-sua-empresa{
+        margin-left: 100px;
+    }
+
+    .informacoes-emsanja .since{
+    text-align: right;
+    margin-right: 20px;
+    display: block;
+    }
+
+    /*Let's Start in acessarConta page!!! */
+
+    .acessar-conta{
+
+        margin-top: 75px;
+        text-align: center;
+    }
+
+    .titulo-acessar{
+
+        font-family: arial;
+        font-size: 150%;
+        font-weight: lighter;
+    }
+
+    .botao-entrar-na-conta{
+        margin-top: 30px;
+        background-color: #308CCE;
+        border-radius: 30px;
+        width: 230px;
+        height: 48px;
+        color: white;
+        border: 0 none;
+        font-weight: lighter;
+        font-size: large;
+    }   
+    .botao-entrar-na-conta:hover{
+        background-color: aqua;
+    }
+
+    .p-email1{
+        font-family: arial;
+        margin-top: 60px;
+        margin-right: 185px;
+    }
+
+    #acessar-email{
+        margin-top: 10px;
+        border-radius: 20px;
+        width: 375px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        border-style: solid;
+        padding-left: 1.3em;
+    
+    }
+
+    .p-senha1{
+        font-family: arial;
+        margin-top: 25px;
+        margin-right: 305px;
+        font-size: small;
+    }
+
+    #acessar-senha{
+        margin-top: 10px;
+        border-radius: 20px;
+        width: 375px;
+        height: 39px;
+        border-color:#3DB9CA;
+        border-style: solid;
+
+        background-image: url("./imagens/icons/eyepassword.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 1.8em;
+        padding-left: 1.3em;
+        
+    }
+
+    .p-esqueceu-senha{
+        font-family: arial;
+        margin-top: 25px;
+        margin-right: 230px;
+        font-size:x-small;
+        text-decoration: underline;
+    }
+
+    .se-nao-tem-conta{
+        margin-top: 80px;
+        text-align: center;
+        font-size: small;
+        font-family: arial;
+        margin-right: 150px;
+    }
+
+    .botao-acessar-registrar{
+        text-align: center;
+        margin-top: -35px;
+        margin-right: 210px;
+    }
+
+
+    .botao-entrar-registrar{
+
+        background-color: #308CCE;
+        border-radius: 30px;
+        width: 160px;
+        height: 42px;
+        color: white;
+        border: 0 none;
+        font-weight: lighter;
+        font-size: large;
+        margin-left: 420px;
+    }
+
+    .botao-entrar-registrar:hover{
+        background-color: aqua;
+    }
+
+    /* Let's coding the registrar page!  */
+
+    .crie-sua-conta{
+        margin-top: 75px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .titulo-criar-conta{
+        font-size: large;
+        font-weight: lighter;
+        
+    }
+
+    .criar-conta-email{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 335px;
+
+    }
+
+    #email-criar {
+        border-radius: 30px;
+        width: 500px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        border-style: solid;
+    }
+
+
+    .criar-conta-nome{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 435px;
+    }
+
+    #nome-criar{
+        border-radius: 30px;
+        width: 250px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        margin-right: 250px;
+        border-style: solid;
+    }
+
+    .criar-conta-nome1{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 390px;
+    }
+
+    #nome-criar1{
+        border-radius: 30px;
+        width: 250px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+    margin-right: 250px;
+    border-style: solid;
+    }
+
+    .criar-conta-data-de-nascimento{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 325px;
+    }
+
+    #nascimento-criar{
+        border-radius: 30px;
+        width: 250px;
+        height: 39px;
+        border-color:#3DB9CA;
+        border-style: solid;
+        font-size: small;
+        margin-right: 250px;
+
+        
+    }
+
+    #nascimento-criar1{
+        border-radius: 30px;
+        width: 165px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        border-style: solid;
+
+        
+    }
+
+    #nascimento-criar2{
+        border-radius: 30px;
+        width: 165px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        border-style: solid;
+    }
+
+    .criar-conta-nome-empresa{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 325px;
+    }
+
+    #nome-empresa-criar{
+        border-radius: 30px;
+        width: 250px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        margin-right: 255px;
+        border-style: solid;
+    }
+
+    .criar-conta-cnpj{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 429px;
+    }
+
+    #cnpj-criar{
+        border-radius: 30px;
+        width: 250px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        margin-right: 250px;
+    border-style: solid;
+    }
+
+    .criar-conta-password{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 425px;
+    }
+
+    #password-criar{
+        border-radius: 30px;
+        width: 500px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        border-style: solid;
+    }
+
+    .criar-conta-password-confirmar{
+        margin-top: 30px;
+        font-size: small;
+        margin-right: 350px;
+    }
+
+    #password-confirmar-criar{
+        border-radius: 30px;
+        width: 500px;
+        height: 39px;
+        border-color:#3DB9CA;
+        font-size: small;
+        border-style: solid;
+    }
+
+    .termos {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-small;
+    }
+
+    .botao-registrar-conta{
+        margin-top: 30px;
+        background-color: #308CCE;
+        border-radius: 30px;
+        width: 230px;
+        height: 48px;
+        color: white;
+        border: 0 none;
+        font-weight: lighter;
+        font-size: large;
+        
+    }   
+
+    .butt-register{
+        text-align: center;
+    }
+
+    .botao-registrar-conta:hover{
+        background-color: aqua;
+    
+    }
